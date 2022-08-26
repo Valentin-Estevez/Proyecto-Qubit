@@ -42,25 +42,35 @@ body {
 }
 
 .header_menu li{
-    background-color: #62c5c0ad;
+    background-color: #62c5c080;
     padding: 10px;
     border-radius: 10%; 
+    width: 130px;
+    height: 30px;
     border: 1px solid #ffffff65;
+    transition: all 1s;
      
 }
 
 .header_menu li:hover{
+    width: 150px;
     background-color:  #2b504e91;
+   
 }
 
 .header_menu a{
     color: white;
-    font-size: 1.05rem;
+    font-size: 1.0rem;
     font-weight: bolder;
+    width: auto;
+    transition: all 1s;
 }
 
 .header_menu a:hover{
     color: #13eca4e5;
+    border-bottom: 2px solid  #13eca4e5;
+    width: 100vw;
+    
 }
 
 .red{
@@ -83,10 +93,16 @@ body {
 
 /* IMG REDES */
 .red img{
-    width: 25px;
+    width: 30px;
     margin: 10px;
+    transition: width 1.5s;
 }
 
+.red img:hover{
+    width: 45px;
+    margin: auto;
+
+}
 /* img section */
 
 .section img{
@@ -373,7 +389,16 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    align-items: center;   
+    align-items: center;  
+    transition: 1s; 
+}
+
+.serviciotecnico:hover{
+    color: #26f8b2;
+    background-color: #98b4d481;
+    border-radius: 10%;
+    border-bottom: 1px solid #26f8b2;
+    width: 41%;
 }
 
 
@@ -383,11 +408,6 @@ body {
     margin: 15px; 
 }
 
-.serviciotecnico:hover{
-    color: #26f8b2;
-    background-color: #98b4d481;
-    border-radius: 10%;
-}
 
 .servicios2 {
     margin: 30px;
@@ -439,24 +459,38 @@ body {
     flex-direction: row;
     justify-content: space-around;    
     color: white;
-    margin: 5px;        
+    margin: 5px;  
+         
 }
+
 .productos2{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
+
+#productos div{
+    transition: all 1s;
+}
+
 #productos div:hover{
-    background-color: #98b4d481;
-    color: #26f8b2;
+    background-color: #d5d9dda8;
+    color: #1f2524;
     border-radius: 10%;
 }
 
 #productos div img{
     width: 300px;
     height: auto;
+    transition: 0.5s;
 }
+#productos div img:hover{
+    width: 315px;
+}
+
+
 
 @media (max-width:480px) {
     
