@@ -607,6 +607,11 @@ body {
     
 }
 
+textarea {
+    resize: vertical;
+    width: 70vw;
+}
+
 /* FIN DE CONTACTO */
 
 
@@ -631,3 +636,4 @@ body {
     color: #26f8b2;
     
 }
+
