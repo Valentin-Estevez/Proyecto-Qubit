@@ -45,7 +45,58 @@
         
             <legend class="form__contact">Formulario de contacto</legend>
 
-                <label for="Nombre">Nombre</label>
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Pass</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Domicilio</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Escriba su domicilio">
+                </div>
+                <!-- <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Domicilio </label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div> -->
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">Ciudad</label>
+                  <input type="text" class="form-control" id="ciudad">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Provincia</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Seleccione</option>
+                    <option>Cordoba</option>
+                    <option>Bs. AS.</option>
+                    <option>Santa Fe</option>
+                    <option>La Pampa</option>
+                    <option>San Luis</option>
+                    <option>Mendoza</option>
+                    <option>Misiones</option>
+                    <option>Chubut</option>
+                    <option>Rio Negro</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">CP</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>               
+        
+              </form>
+
+
+
+
+
+
+
+
+
+                <!-- <label for="Nombre">Nombre</label>
                 <input type="text" name="nombre" placeholder="nombre">
                 <br>
                 <label for="apellido">Apellido</label>
@@ -61,9 +112,9 @@
                         <option value="Femenino">Femenino</option>
                         <option value="Otro">Otro</option>
                     </select>
-                    <br>
+                    <br>-->
 
-                <label for="terminos">acepta terminos y condiciones</label>
+                    <label for="terminos">acepta terminos y condiciones</label>
                     <input type="checkbox" name="terminos" id="terminos">
                     <br>
                     <textarea name="mensaje" id="mensaje" cols="30" rows="10">deje su mensaje aqui</textarea>
