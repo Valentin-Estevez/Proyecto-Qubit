@@ -173,7 +173,7 @@ body {
     border-radius: 3%;    
     display: grid;    
     grid-template-columns: 33vw 33vw 33vw;
-    grid-template-rows: 30vh;
+    grid-template-rows: 40vh;
     color: white;
     justify-content: center;
     border-top: cyan solid 2px;
@@ -487,9 +487,11 @@ body {
 }
 /* FIN QUE HACEMOS */
 
+/* COMIENZO DE PRODUCTOS */
+
 #article__prod{
-    width: 90vw;
-    height: 50vh;
+    width: auto;
+    height: 80vh;
     display: flex;
     flex-direction: column;    
     justify-content: center;
@@ -497,12 +499,17 @@ body {
 }
 
 #Categorias{
-    width: 30vw;
+    width: 20vw;
     height: 20px;      
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.productoTitle{
+    color: white;
+    margin-top:40px;    
 }
 
 #productos{
@@ -511,7 +518,7 @@ body {
     flex-direction: row;
     justify-content: space-around;    
     color: white;
-    margin: 5px;  
+    margin: 50px;  
          
 }
 
@@ -549,18 +556,21 @@ body {
     #article__prod{
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
+        height: auto;
     }
 
     #productos{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 10px;
+        
     }
 
-    #categorias{
-        width: 30vw;
+    #Categorias{
+        width: 45vw;
+
     }
 }
 @media (min-width:481px) and (max-width:768) {
@@ -610,6 +620,14 @@ body {
 textarea {
     resize: vertical;
     width: 70vw;
+}
+
+.boton{
+    border-radius: 25%;
+}
+
+.boton:hover{
+    padding: 5px;
 }
 
 /* FIN DE CONTACTO */

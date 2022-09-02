@@ -1,4 +1,4 @@
-# este es el readme de mi primer repositorio
+# Este es el readme de mi primer repositorio
 
 **comision 41785**
 
