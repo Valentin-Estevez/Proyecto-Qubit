@@ -1,0 +1,61 @@
+/* menu navegacion */
+
+.header{
+    display: grid;
+    grid-template-columns: 33vw 60vw;
+    grid-template-rows: 30vh;
+    border-bottom: cyan solid 2px;
+    background-color: #62c5c038;
+    border-radius: 3%;
+
+    .container-fluid{
+        background-color: #62c5c038;
+    }
+
+    .header_logo img{
+        width: 20vw;
+        height: auto;
+    }
+
+    .header_nav{
+        margin-top: 25px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+
+    #navbarNavAltMarkup .nav-link{
+        color: white;
+
+        &:hover{
+            color: #26f8b2;
+        }
+    }
+    }
+}
+
+/* fin menu navegacion*/
+
+/*redes*/
+
+.red{
+    display: flex;
+    flex-direction: column;   
+    & ul{
+        display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 35px;
+    }  
+    & img{
+        width: 30px;
+    margin: 10px;
+    transition: width 1.5s;
+    &:hover{
+        width: 45px;
+    margin: auto;
+    }
+    }
+}
+
+/*fin de redes*/
