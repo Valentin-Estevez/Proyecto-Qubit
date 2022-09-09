@@ -212,17 +212,7 @@ body {
         background-color: #93e0e036;    
     }
     
-    .header_menu a{
-        font-size: 10px;
-                                 
-           
-    }
-    .header_menu{
-        width: 100vw;  
-        height: auto;      
-        
-        align-items: normal;
-    }
+    
     .red{
         width: 100vw;
         align-items: center;
