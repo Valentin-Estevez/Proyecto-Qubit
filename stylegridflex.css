@@ -479,22 +479,22 @@ body {
     
 }
 
-#productos div{
+#productos .productos2{
     transition: all 1s;
 }
 
-#productos div:hover{
+#productos .productos2:hover{
     background-color: #d5d9dda8;
     color: #1f2524;
     border-radius: 10%;
 }
 
-#productos div img{
+#productos .productos2 img{
     width: 300px;
     height: auto;
     transition: 0.5s;
 }
-#productos div img:hover{
+#productos .productos2 img:hover{
     width: 315px;
 }
 
@@ -522,6 +522,7 @@ body {
 
     }
 }
+
 @media (min-width:481px) and (max-width:768) {
 
     #article__prod{

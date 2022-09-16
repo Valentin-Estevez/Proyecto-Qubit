@@ -1,10 +1,33 @@
 /*variables*/
 
-$bgpages:  #83d3cf21;
-$bgheader: #62c5c038;
+$bgpages:#83d3cf21;
+$bgheader:#62c5c038;
 $bgnav:#60a9b381;
 $lethover:#26f8b2;
 $bgfooter:#39777452;
 
 /*responsive*/
 $mediamobile: 480px;
+
+
+/*MAPEO*/
+
+$colores: (
+    lethover: #26f8b2,
+    bgfooter: #39777452,
+    bgheader: #62c5c038,
+    bgnav: #60a9b381,
+    bgpages: #83d3cf21,
+);
+
+
+
+
+
+@mixin btn {
+    border-radius: 25%;
+            
+            &:hover{
+                padding: 5px;
+            }
+}

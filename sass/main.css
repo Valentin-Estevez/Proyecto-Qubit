@@ -1,5 +1,6 @@
 /*variables*/
 /*responsive*/
+/*MAPEO*/
 /*mobile index*/
 @media (max-width: 480px) {
   body {
@@ -84,12 +85,74 @@
     margin-top: 15px;
   }
 }
+/*FIN DE INDEX*/
+/*INICIO DE QUIENES SOMOS*/
+@media (max-width: 480px) {
+  .somos section {
+    height: auto;
+  }
+  .somos .somos__text {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+  }
+  .somos .somos__text {
+    width: 100vw;
+  }
+  .somos .somos__title h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .somos__text {
+    width: 90vw;
+  }
+}
+/* FIN PAGINA QUIENES SOMOS */
+/*INICIO QUE HACEMOS*/
+@media (max-width: 480px) {
+  .quehacemos {
+    font-size: 1.2rem;
+  }
+  #articulo p {
+    font-size: 0.7rem;
+  }
+  #articulo h2 {
+    font-size: 0.9rem;
+  }
+}
+/* FIN QUE HACEMOS */
+/*INICIO DE PRODUCTOS*/
+@media (max-width: 480px) {
+  #articleProd {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  #articleProd #cat {
+    width: 45vw;
+  }
+  #prod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768) {
+  #article__prod {
+    width: 768px;
+    height: 70vh;
+  }
+}
+/*FIN DE PRODUCTOS*/
 /*section pagina inicio*/
 .section {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 60vh;
+  height: 80vh;
   width: 100vw;
   margin-top: 20px;
 }
@@ -107,28 +170,207 @@
 .section .carousel-item {
   background-color: rgba(131, 211, 207, 0.1294117647);
   color: white;
-  width: 60vw;
-  height: 60vh;
+  width: 80vw;
+  height: 80vh;
+  align-items: center;
 }
-.section .section_titulo {
+.section .carousel-item .section_titulo {
   font-size: 30px;
   font-weight: bold;
   margin: 10px;
   margin-top: 20px;
   text-align: center;
 }
-.section .section_texto {
+.section .carousel-item .section_texto {
   margin-top: 30px;
+  margin-left: 300px;
   padding: 20px;
-  font-weight: 900;
-  line-height: 30px;
+  font-weight: bolder;
+  font-size: 25px;
+  line-height: 40px;
   letter-spacing: 2px;
-  text-align: center;
+  width: 500px;
+  height: auto;
 }
 
 /*fin de section*/
+/*INDEX*/
+/*QUIENES SOMOS*/
+.somos {
+  background-image: url(../assets/pc.jpg);
+  background-position: left top;
+  background-size: cover;
+  height: 70vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.somos section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+  width: 400px;
+  font-size: 22px;
+}
+.somos .somos__title {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+.somos .somos__texting {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.somos .somos__texting .somos__text {
+  font-size: 2.5rem;
+  width: 20px;
+  line-height: 3rem;
+}
+
+/*FIN QUIENES SOMOS*/
+/*INICIO QUE HACEMOS*/
+#articulo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#articulo .quehacemos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+  margin: 10px;
+}
+#articulo .servicios, #articulo .servicios2 {
+  margin: 30px;
+  width: 90vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  flex-wrap: wrap;
+}
+#articulo .servicios .serviciotecnico img, #articulo .servicios2 .serviciotecnico img {
+  height: auto;
+  width: 100%;
+  margin: 15px;
+}
+#articulo .servicios .serviciotecnico, #articulo .servicios2 .serviciotecnico {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+#articulo .servicios .serviciotecnico:hover, #articulo .servicios2 .serviciotecnico:hover {
+  color: #26f8b2;
+  background-color: rgba(152, 180, 212, 0.5058823529);
+  border-radius: 10%;
+  border-bottom: 1px solid #26f8b2;
+  width: 41%;
+}
+.article__prod {
+  width: auto;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.article__prod .productoTitle {
+  color: white;
+  margin-top: 40px;
+}
+.article__prod .Categorias {
+  width: 120px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.article__prod .productos {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  margin: 50px;
+}
+.article__prod .productos .productos2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.article__prod .productos .productos2 {
+  transition: all 1s;
+}
+.article__prod .productos .productos2:hover {
+  background-color: rgba(213, 217, 221, 0.6588235294);
+  color: #1f2524;
+  border-radius: 10%;
+}
+.article__prod .productos .productos2 img {
+  width: 400px;
+  height: auto;
+  transition: 0.5s;
+}
+.article__prod .productos .productos2 img:hover {
+  width: 425px;
+}
+
+/*INICIO DE CONTACTOS*/
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  height: auto;
+}
+.contact .formulario {
+  background-color: rgba(152, 180, 212, 0.5058823529);
+  padding: 20px;
+  width: 80vw;
+  color: white;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border: solid 1px white;
+}
+.contact .formulario .form__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  width: 50%;
+}
+.contact .formulario textarea {
+  resize: vertical;
+  width: 70vw;
+}
+.contact .formulario .botonSend, .contact .formulario .botonDelete {
+  border-radius: 25%;
+}
+.contact .formulario .botonSend:hover, .contact .formulario .botonDelete:hover {
+  padding: 5px;
+}
 /* menu navegacion */ /*variables*/
 /*responsive*/
+/*MAPEO*/
 .header {
   display: grid;
   grid-template-columns: 33vw 60vw;
@@ -136,6 +378,15 @@
   border-bottom: cyan solid 2px;
   background-color: rgba(98, 197, 192, 0.2196078431);
   border-radius: 3%;
+}
+.header .navbar-nav a {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 1s;
+}
+.header .navbar-nav a:hover {
+  color: #26f8b2;
 }
 .header .header_logo img {
   width: 20vw;

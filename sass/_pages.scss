@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 60vh;
+    height: 80vh;
     width: 100vw;
     margin-top: 20px;
 
@@ -25,27 +25,259 @@
     & .carousel-item{
         background-color: $bgpages;
         color: white;
-        width: 60vw;
-        height: 60vh;
+        width: 80vw;
+        height: 80vh;
+        align-items: center;
+        
+
+
+        .section_titulo{
+            font-size: 30px;
+            font-weight: bold;
+            margin: 10px;
+            margin-top: 20px;
+            text-align: center;
+            
+        }
+
+        .section_texto{
+            margin-top: 30px;
+            margin-left: 300px;
+            padding: 20px;
+            font-weight:bolder;
+            font-size: 25px;
+            line-height: 40px;
+            letter-spacing: 2px;  
+            width: 500px;    
+            height: auto;           
+                        
+        } 
+       
     }
 
-    .section_titulo{
-        font-size: 30px;
-        font-weight: bold;
-        margin: 10px;
-        margin-top: 20px;
-        text-align: center;
-    }
     
-    .section_texto{
-        margin-top: 30px;
-        padding: 20px;
-        font-weight: 900;
-        line-height: 30px;
-        letter-spacing: 2px;
-        text-align: center;
-    }   
+    
+      
 
 }
 
 /*fin de section*/
+/*INDEX*/
+
+/*QUIENES SOMOS*/
+
+
+.somos{
+    background-image: url(../assets/pc.jpg);
+    background-position:left top;
+    background-size: cover;
+    height: 70vh;  
+    width: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    & section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        text-align: center;
+        width: 400px;
+        font-size: 22px;                
+    }
+
+    .somos__title{
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+
+    .somos__texting{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+                    
+
+        .somos__text{
+            font-size: 2.5rem;    
+            width: 20px;
+            line-height: 3rem;                
+        }
+        
+    }
+
+    
+}
+
+/*FIN QUIENES SOMOS*/
+
+/*INICIO QUE HACEMOS*/
+
+#articulo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .quehacemos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 40px;
+        font-weight: 900;
+        margin: 10px;
+
+    }
+
+    .servicios {
+        margin: 30px;
+        width: 90vw;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+        flex-wrap: wrap;
+
+        .serviciotecnico img{
+            height: auto;
+            width: 100%;      
+            margin: 15px; 
+        }
+
+        .serviciotecnico{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;  
+            transition: 1s; 
+
+            &:hover{
+                color: #26f8b2;
+                background-color: #98b4d481;
+                border-radius: 10%;
+                border-bottom: 1px solid #26f8b2;
+                width: 41%;
+            }
+        }
+    }
+
+    .servicios2 {
+        @extend .servicios
+    }     
+        
+}
+
+
+.article__prod{
+    width: auto;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;   
+    
+    .productoTitle{
+        color: white;
+        margin-top:40px;    
+    }
+
+    .Categorias{
+        width: 120px;
+        height: 30px;      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productos{
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;    
+        color: white;
+        margin: 50px;  
+
+        .productos2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .productos2{
+            transition: all 1s;
+            &:hover{
+                background-color: #d5d9dda8;
+                color: #1f2524;
+                border-radius: 10%;
+
+            }
+            & img{
+                width: 400px;
+                height: auto;
+                transition: 0.5s;
+                &:hover{
+                    width: 425px;
+                }
+
+            }
+        }
+        
+             
+    }
+
+
+}
+
+/*INICIO DE CONTACTOS*/
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center; 
+    width: 100vw;  
+    height: auto; 
+
+    .formulario {
+        background-color: #98b4d481;
+        padding: 20px;
+        width: 80vw;
+        color: white;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        border: solid 1px white;
+
+        .form__contact{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            width: 50%;
+            
+        }
+
+        textarea {
+            resize: vertical;
+            width: 70vw;
+        }
+
+        .botonSend{
+            @include btn;
+        }
+        .botonDelete{
+            @extend .botonSend;
+        }
+    }
+}
+

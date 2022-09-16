@@ -118,3 +118,94 @@
         }       
     }
 }
+
+/*FIN DE INDEX*/
+/*INICIO DE QUIENES SOMOS*/
+
+@media (max-width:480px){
+
+    .somos{ 
+
+        & section{
+        height: auto;
+
+        }
+
+        & .somos__text{
+            font-size: 1rem;
+            letter-spacing: 2px;
+            line-height: 1.5rem;
+        }
+
+        .somos__text{
+            width: 100vw;
+        }
+
+        .somos__title h1{
+            font-size: 1.5rem;
+        }
+    }
+
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    .somos__text{
+        width: 90vw ;
+    }    
+    
+}
+
+/* FIN PAGINA QUIENES SOMOS */
+
+/*INICIO QUE HACEMOS*/
+
+@media (max-width:480px) {
+
+    .quehacemos{
+        font-size: 1.2rem;
+    }
+    #articulo p{
+        font-size: 0.7rem;
+    }
+    #articulo h2{
+        font-size: 0.9rem;
+    }
+}
+/* FIN QUE HACEMOS */
+
+/*INICIO DE PRODUCTOS*/
+
+@media (max-width:480px) {
+    
+    #articleProd{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        #cat{
+            width: 45vw;
+    
+        }
+    }
+
+    #prod{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        
+    }
+
+    
+}
+
+
+@media (min-width:481px) and (max-width:768) {
+
+    #article__prod{
+        width: 768px;
+        height: 70vh;
+        
+    }
+}
+/*FIN DE PRODUCTOS*/

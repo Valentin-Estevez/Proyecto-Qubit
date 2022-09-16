@@ -1,15 +1,25 @@
 /* menu navegacion */
 @import "vars";
 
+
 .header{
     display: grid;
     grid-template-columns: 33vw 60vw;
     grid-template-rows: 30vh;
     border-bottom: cyan solid 2px;
-    background-color:  $bgheader;
+    background-color:  map-get($colores , bgheader);
     border-radius: 3%;
 
-    
+    .navbar-nav a{
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: 1s;
+
+        &:hover{
+            color: #26f8b2;
+        }
+    }
 
     .header_logo img{
         width: 20vw;
