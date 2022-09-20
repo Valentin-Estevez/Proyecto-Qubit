@@ -1,5 +1,26 @@
 /*section pagina inicio*/
 
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+    .encabezadoTitulo h1{
+        background-color:$bgpages;
+        width: 65vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        color: white;
+        font-size: 1.7rem;
+        font-weight: 900;
+        padding: 10px;
+        margin-top: 25px;       
+
+    }
+}
 .section{
     display: flex;
     flex-direction: row;
@@ -54,14 +75,51 @@
         } 
        
     }
-
     
-    
-      
 
 }
-
 /*fin de section*/
+
+.menuFinal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    align-content: center;
+    justify-content: center;   
+    color: white;
+    width: 100vw;    
+    
+    margin-top: 20px;
+
+    .menu__pie{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        border: 1px solid cyan;
+        width: 350px;
+        font-size: 0.8rem;
+        background-color: $bgpages;
+        padding: 10px;   
+        
+        &:hover{
+            background-color: #d5d9dda8;
+            color: black;
+        }
+
+        & img{
+            width: 50px;
+            
+        }
+        
+    }
+}
+
+
+
+
+
+
 /*INDEX*/
 
 /*QUIENES SOMOS*/
