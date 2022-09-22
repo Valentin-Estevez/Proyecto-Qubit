@@ -453,7 +453,7 @@ body {
     height: 200px;
   }
   body .section .carousel-item .section_titulo {
-    font-size: 10px;
+    font-size: 15px;
     margin: 5px;
   }
   body .section .carousel-item .section_texto {
@@ -529,7 +529,12 @@ body {
 /* FIN PAGINA QUIENES SOMOS */
 /*INICIO QUE HACEMOS*/
 @media (max-width: 480px) {
-  .quehacemos {
+  #articulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #articulo .quehacemos {
     font-size: 1.2rem;
   }
   #articulo p {

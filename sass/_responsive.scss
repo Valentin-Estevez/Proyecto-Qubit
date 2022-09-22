@@ -57,7 +57,7 @@
                 height: 200px;
 
                 .section_titulo{
-                    font-size: 10px;
+                    font-size: 15px;
                     margin: 5px;
                 }
                 
@@ -183,9 +183,18 @@
 
 @media (max-width:480px) {
 
-    .quehacemos{
-        font-size: 1.2rem;
+    #articulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .quehacemos{
+            font-size: 1.2rem;
+        }
     }
+
+    
+
     #articulo p{
         font-size: 0.7rem;
     }
