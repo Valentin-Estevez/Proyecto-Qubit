@@ -6,7 +6,7 @@
     align-content: center;
     align-items: center;
 
-    .encabezadoTitulo h1{
+    .encabezadoTitulo{
         background-color:$bgpages;
         width: 65vw;
         display: flex;
@@ -44,8 +44,8 @@
     }
 
     & .carousel-item{
-        background-color: $bgpages;
-        color: white;
+        background-color: #bbc2c2da;
+        color: rgb(0, 0, 0);
         width: 80vw;
         height: 80vh;
         align-items: center;
@@ -63,14 +63,15 @@
 
         .section_texto{
             margin-top: 30px;
-            margin-left: 300px;
+            margin: auto;
+            /* margin-left: 300px; */
             padding: 20px;
             font-weight:bolder;
             font-size: 25px;
             line-height: 40px;
             letter-spacing: 2px;  
             width: 500px;    
-            height: auto;           
+            height: auto;             
                         
         } 
        
