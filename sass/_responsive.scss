@@ -40,6 +40,14 @@
         /* FIN NAV */
         /* INICIO DE SECTION */
 
+        .encabezado{ 
+            .encabezadoTitulo {
+                width: 90vw;
+                font-size: 25px;
+            }
+        }
+    
+
         .section{
             width: 100vw;
             height: auto;
@@ -191,6 +199,22 @@
 
 @media (max-width:480px) {
     
+    .article__prod{
+        .productos{
+            .productos2{
+                img{
+                    width: 70vw;
+                    
+
+                }
+
+            }
+
+        }
+
+    }    
+
+
     #articleProd{
         display: flex;
         flex-direction: column;

@@ -277,7 +277,7 @@
 
             }
             & img{
-                width: 400px;
+                width: 30vw;
                 height: auto;
                 transition: 0.5s;
                 &:hover{
@@ -329,7 +329,11 @@
             align-content: center;
             align-items: center;
             margin: 10px;
-            width: 70%;
+            width: 90%;
+
+            .col-12 {
+                width: 50%;
+            }
             
         }
 
